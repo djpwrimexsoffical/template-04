@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background-image {
+    background-image: url("WhatsApp\ Image\ 2024-04-29\ at\ 14.41.59\ \(6\).jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content {
+    max-width: 800px; /* Atur lebar konten */
+    background-color: #333333b1;
+    border-bottom-right-radius: 60px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: antiquewhite;
+    font-family: "Great Vibes", cursive;
+    font-weight: 300;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: antiquewhite;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color:antiquewhite;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: antiquewhite;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+.button-link:hover {
+    background-color: #555; /* Warna latar belakang saat tombol dihover */
+}
+
+/* Animasi fade in pada konten */
+.content {
+    max-width: 800px;
+    background-color: #333333b1;
+    border-bottom-right-radius: 60px;
+    opacity: 0; /* Konten awalnya tidak terlihat */
+    animation: fadeIn 1s ease-in-out forwards; /* Animasi fade in selama 1 detik */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Geser ke bawah sebentar sebelum fade in */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.background-image {
+    background-image: url("WhatsApp\ Image\ 2024-04-29\ at\ 14.41.59\ \(6\).jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Awalnya tidak terlihat */
+    animation: fadeInBackground 1s ease-in-out forwards; /* Animasi fade in selama 1 detik */
+}
+
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse; /* Membalik arah konten dan gambar */
+    align-items: center;
+}
+
+
+
+.right-image {
+    max-width: 100%;
+    height: 400px;
+    opacity: 50%;
+    margin-left: 10px; /* Jarak antara gambar dan konten */
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: antiquewhite;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+}
+
+.button-link:hover {
+    background-color: #555; /* Warna latar belakang saat tombol dihover */
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Ubah menjadi tata letak kolom pada perangkat kecil */
+        align-items: flex-start; /* Posisikan konten dan gambar ke kiri */
+    }
+
+    .right-image {
+        margin-left: 0; /* Hapus jarak antara gambar dan konten */
+        margin-top: 20px; /* Tambahkan jarak di atas gambar */
+    }
+
+    .content {
+        padding: 10px;
+    }
+}
